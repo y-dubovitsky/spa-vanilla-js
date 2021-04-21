@@ -1,10 +1,8 @@
-import Abstract from '../abstract.js';
-import NEWS_API_KEY from '../../key.js';
+import NEWS_API_KEY from '../key.js';
 
-export default class News extends Abstract {
+export default class News {
 
   constructor() {
-    super();
   }
 
   async getNews() {

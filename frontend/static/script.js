@@ -1,8 +1,8 @@
-import Main from './views/impl/main.js';
-import News from './views/impl/news.js';
-import About from './views/impl/about.js';
-import Contacts from './views/impl/contacts.js';
-import Error from './views/impl/error.js';
+import Main from './views/main.js';
+import News from './views/news.js';
+import About from './views/about.js';
+import Contacts from './views/contacts.js';
+import Error from './views/error.js';
 
 const navigate = url => {
   history.pushState(null, null, url);

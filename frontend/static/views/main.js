@@ -1,10 +1,7 @@
-import Abstract from '../abstract.js';
-
-export default class Main extends Abstract {
+export default class Main {
 
   constructor() {
-    super();
-    this.setTitle('Welcome to the Hot News Publisher')
+    document.setTitle('Welcome to the Hot News Publisher')
   }
 
   getTemplate() {

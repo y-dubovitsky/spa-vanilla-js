@@ -1,9 +1,6 @@
-import Abstract from '../abstract.js';
-
-export default class About extends Abstract{
+export default class About {
 
   constructor() {
-    super();
   }
 
   getTemplate() {

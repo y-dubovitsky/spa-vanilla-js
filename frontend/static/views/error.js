@@ -1,9 +1,6 @@
-import Abstract from '../abstract.js';
-
-export default class Error extends Abstract{
+export default class Error {
 
   constructor() {
-    super();
   }
 
   getTemplate() {

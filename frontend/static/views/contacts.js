@@ -1,9 +1,6 @@
-import Abstract from '../abstract.js';
-
-export default class Contacts extends Abstract{
+export default class Contacts {
 
   constructor() {
-    super();
   }
 
   getTemplate() {

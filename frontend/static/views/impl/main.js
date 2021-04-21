@@ -9,8 +9,14 @@ export default class Main extends Abstract {
 
   getTemplate() {
     return `
-              sdivoivnoivneroivne
+            PS C:\Users\User\IdeaProjects\spa-on-vanilla-js> node server.js
             `
   }
 
+  render() {
+    const wrapper = document.createElement('div');
+    wrapper.innerHTML = this.getTemplate();
+
+    this.element = wrapper;
+  }
 }

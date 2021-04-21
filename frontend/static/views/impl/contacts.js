@@ -11,4 +11,11 @@ export default class Contacts extends Abstract{
             Contacts
             `
   }
+
+  render() {
+    const wrapper = document.createElement('div');
+    wrapper.innerHTML = this.getTemplate();
+
+    this.element = wrapper;
+  }
 }

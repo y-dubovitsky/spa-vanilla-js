@@ -9,7 +9,7 @@ const navigate = url => {
   router();
 }
 
-const router = () => {
+const router = async () => {
 
   const routes = [
     { pathname: "/", className: Main }, // Make dynamic import
@@ -37,10 +37,18 @@ const router = () => {
   }
 
   const instance = new match.route.className();
-  const view = instance.getTemplate(); 
+  await instance.render();
 
-  document.querySelector('#app').innerHTML = view;
+  clearContent();
 
+  document.querySelector('#app').append(instance.element);
+
+  function clearContent() {
+    const content = document.querySelector('#app').firstElementChild;
+    if(content) {
+      content.remove();
+    }
+  }
 }
 
 document.addEventListener('DOMContentLoaded', () => {

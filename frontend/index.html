@@ -10,17 +10,35 @@
 </head>
 
 <body>
-  <nav class="nav">
+  <header>
     <a href="/" class="nav-link">Main</a>
     <a href="/news" class="nav-link">News</a>
     <a href="/about" class="nav-link">About</a>
     <a href="/contacts" class="nav-link">Contacts</a>
-  </nav>
+  </header>
 
-  <div id="app"></div>
+  <div class="slider"></div>
 
-  <!-- Script -->
-  <script type="module" src="./static/script.js"></script>
+  <div class="description">
+    <div>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores vitae, impedit vero quam explicabo tenetur laborum, voluptates cupiditate atque itaque vel? Odit accusantium, nobis esse ut, modi sapiente ipsam doloremque sint omnis, facere itaque officiis corporis totam eaque aspernatur necessitatibus animi numquam. Blanditiis error, consectetur qui soluta ducimus assumenda ullam!
+    </div>
+    <div>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit eaque dignissimos, labore, aut quo atque veniam dicta quisquam laboriosam sequi qui. Deleniti optio quibusdam facilis perspiciatis laudantium praesentium, repellat aperiam obcaecati iste odio est accusantium quam similique doloribus quasi sit, aspernatur aliquam totam, ut possimus omnis qui consequatur tempore cum. Molestiae blanditiis nihil assumenda rerum, in cumque porro unde quas dolor nemo id commodi ratione nesciunt quibusdam sint inventore similique.
+    </div>
+
+    <div id="app"></div>
+
+    <footer></footer>
+
+    <!-- Script -->
+    <script type="module">
+      import EntryPoint from './static/script.js';
+
+    const entryPoint = new EntryPoint();
+    entryPoint.initialize();
+
+  </script>
 </body>
 
 </html>

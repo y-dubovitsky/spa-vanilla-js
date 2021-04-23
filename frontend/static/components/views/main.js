@@ -1,7 +1,7 @@
 export default class Main {
 
   constructor() {
-    document.setTitle('Welcome to the Hot News Publisher')
+    document.title = 'Welcome to the Hot News Publisher';
   }
 
   getTemplate() {
